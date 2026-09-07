@@ -2269,6 +2269,9 @@ footer p {
     }
 
     /* Nav links and hamburger are inherited from global desktop view styles */
+    .hamburger {
+        margin-right: 10px;
+    }
 
     .logo-brand-img {
         height: 44px;
