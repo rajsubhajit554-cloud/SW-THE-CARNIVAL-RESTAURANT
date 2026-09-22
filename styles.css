@@ -1,4 +1,4 @@
-/* ============================================================
+﻿/* ============================================================
    THE CARNIVAL RESTAURANT â€” Premium Modern Theme
    ============================================================ */
 
@@ -904,7 +904,7 @@ section {
     scroll-behavior: smooth;
     scroll-snap-type: x proximity;
     -webkit-overflow-scrolling: touch;
-    touch-action: pan-x pan-y;
+    touch-action: pan-x pan-y ;
     overscroll-behavior-x: contain;
     padding: 6px 4px 14px;
     width: 100%;
@@ -957,7 +957,6 @@ section {
     position: relative;
     will-change: transform;
     contain: layout style;
-    touch-action: pan-x pan-y;
 }
 
 .food-menu-card:nth-child(even) {
@@ -1324,7 +1323,7 @@ section {
         overflow-x: auto;
         overflow-y: hidden;
         -webkit-overflow-scrolling: touch;
-        touch-action: pan-x pan-y;
+        touch-action: pan-x pan-y ;
         overscroll-behavior-x: contain;
         gap: 7px;
         margin-bottom: 14px;
@@ -4774,4 +4773,10 @@ footer p {
     opacity: 0 !important;
     visibility: hidden !important;
     pointer-events: none !important;
+}
+/* Mobile touch vertical page scroll compatibility */
+.main-menu-scroll-wrapper,
+.main-menu-scroll-track,
+.main-menu-scroll-track .food-menu-card {
+    touch-action: pan-x pan-y !important;
 }
